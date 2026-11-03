@@ -1,11 +1,9 @@
 const model = {
     app: {
-        currentPage: 'startPage',
+        currentPage: 'foodStorage',
         currentHeader: 'Lagerbeholdning'
     },
     viewState: {},
     
-    
-
 
 }
