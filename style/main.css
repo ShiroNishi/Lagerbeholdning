@@ -1,4 +1,6 @@
 #header-select {
+    margin-bottom: 20px;
+    border-bottom: solid black 2px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
@@ -12,6 +14,31 @@
 }
 
 .category-page:hover {
-    color: #794a0c;
-    border-bottom: solid #794a0c;
+    color: #7fd2dd;
+}
+
+
+#food-grid-container{
+    margin-left: -230px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    gap: 20px;
+    
+    .food-item {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        background-color: #62717e;
+        border: solid black;
+        cursor: pointer;
+        .preview-img{
+            height: 150px;
+        }
+    }
+
+    p {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
 }

@@ -1,7 +1,7 @@
 function updateView(){
     let loadedPage = ''
     let header = /*HTML*/ `
-        <div>${setHeader()}</div>
+        <div >${setHeader()}</div>
         ` 
     if (model.app.currentPage == 'foodStorage') loadedPage = foodStorageHome();
     if (model.app.currentPage == 'washStorage') loadedPage = washStorageHome();
