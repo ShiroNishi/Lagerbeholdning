@@ -14,6 +14,7 @@ const model = {
             price: 15.90,
             brand: "Eldorado", 
             store: "Meny",
+            autoRefill: 1
         },
         {
             id: 2,
@@ -23,6 +24,7 @@ const model = {
             price: 12.90,
             brand: "Eldorado", 
             store: "Joker",
+            autoRefill: 1
         },
         {
             id: 3,
@@ -32,6 +34,7 @@ const model = {
             price: 23.90,
             brand: "Stavland", 
             store: "Meny",
+            autoRefill: 1
         },
         {
             id: 4,
@@ -41,6 +44,7 @@ const model = {
             price: 26.90,
             brand: "Green Giant", 
             store: "Meny",
+            autoRefill: 1
         },
         {
             id: 5,
