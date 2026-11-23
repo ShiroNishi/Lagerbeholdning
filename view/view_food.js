@@ -1,16 +1,15 @@
 function foodStorageHome(){
     let html = /*HTML*/ `
+        <input
+        placeholder="Søk i matbeholdning"
+        style="min-width: 500px;"
+        oninput="searchFood(this.value)">
         <div id="food-grid-container">
             ${showFoodAll()}
         </div>
-
-
-
     `
     return html
 }
-
-
 
 function showFoodAll(){
     const allFood = model.food
@@ -29,4 +28,9 @@ function showFoodAll(){
         `
     }
     return html
+}
+
+function searchFood(input){
+    model.viewState.searchFoodItem = input;
+    
 }
