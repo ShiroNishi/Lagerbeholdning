@@ -9,18 +9,23 @@ function shopListHome(){
                 <th>Check</th>
             <tr>
             ${addListItems()}
-        
+
+            <td>Total:</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>${calcTotalPrice()}</td>
+
         </table>
+
     `
     return html
 }
-
 
 function addListItems(){
     let tableItem = '';
 
     for (let item of model.food){
-        console.log(item)
         if (item.amount <= item.autoRefill){
             tableItem += /*HTML*/ `
                 <tr>
@@ -43,4 +48,14 @@ function addListItems(){
     
     return tableItem
 
+}
+
+function calcTotalPrice(){
+    let price = 0;
+    for (let item of model.food){
+        if (!Number.isInteger(item.price)) continue;
+        price += item.price
+    }
+
+    return price
 }

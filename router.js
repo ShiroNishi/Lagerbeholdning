@@ -7,7 +7,13 @@ function updateView(){
     if (model.app.currentPage == 'washStorage') loadedPage = washStorageHome();
     if (model.app.currentPage == 'shopList') loadedPage = shopListHome();
 
-    document.getElementById('app').innerHTML = header + loadedPage
+    const layoutClass = model.app.currentPage == 'foodStorage' ? 'app-layout app-layout-food' : 'app-layout';
+    document.getElementById('app').innerHTML = `
+        <div class="${layoutClass}">
+            <div class="app-header">${header}</div>
+            ${loadedPage}
+        </div>
+    `;
 }
 
 function setHeader(){
