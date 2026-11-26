@@ -35,7 +35,7 @@ function addListItems(){
                     </td>
                     <td>${item.amount}</td>
                     <td>${item.store}</td>
-                    <td>${item.price} kr.</td>
+                    <td>${item.price.toFixed(2)} kr.</td>
                     <td><input type="checkbox"></td>
                 
                 </tr>
